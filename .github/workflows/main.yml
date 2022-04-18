@@ -27,7 +27,7 @@ jobs:
     - name: Publish to Docker Repository (latest)
       uses: elgohr/Publish-Docker-Github-Action@v4
       with:
-        name: prismaticd/prefect-base:latest
+        name: prismaticd/prefect-base
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
