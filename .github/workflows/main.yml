@@ -21,8 +21,9 @@ jobs:
     - uses: actions/checkout@v3
     - name: Version strings
       id: version
+      # https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#environment-files
       run: |
-        echo "::set-env name=RELEASE_TIME::$(date +"%y-%m-%d-%H-%M")"         
+        echo "RELEASE_TIME=$(date +"%y-%m-%d-%H-%M")" >> $GITHUB_ENV         
 
     - name: Publish to Docker Repository (latest)
       uses: elgohr/Publish-Docker-Github-Action@v4
