@@ -22,7 +22,7 @@ jobs:
     - name: Version strings
       id: version
       run: |
-        echo "::set-output name=RELEASE_TIME::$(date +"%y-%m-%d-%H-%M")"         
+        echo "::set-env name=RELEASE_TIME::$(date +"%y-%m-%d-%H-%M")"         
 
     - name: Publish to Docker Repository (latest)
       uses: elgohr/Publish-Docker-Github-Action@v4
