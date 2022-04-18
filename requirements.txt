@@ -1,0 +1,8 @@
+# Prefect stuff
+prefect>=2.0b
+prefect-gcp
+
+# GCP Stuff
+google-cloud-logging
+google-cloud-bigquery
+google-cloud-bigquery-storage
