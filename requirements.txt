@@ -1,3 +1,8 @@
+# Web stuff
+gunicorn
+fastapi
+uvicorn
+
 # Prefect stuff
 prefect>=2.0b
 prefect-gcp
