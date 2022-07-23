@@ -1,7 +1,7 @@
 # prefect-base
 
 Prefect base image containing google cloud base requirements
-* Python 3.9 slim base image
+* Python 3.10 slim base image
 * Google cloud SDK installed
 * Some Google Cloud python packages (Logging, Bigquery)
 
