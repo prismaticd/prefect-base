@@ -4,7 +4,7 @@ fastapi
 uvicorn
 
 # Prefect stuff
-prefect>=2.0b
+prefect>=2.0b9
 prefect-gcp
 
 # GCP Stuff
