@@ -1,4 +1,4 @@
-FROM python:3.9-slim as python-runtime
+FROM python:3.10-slim as python-runtime
 
 RUN python --version && pip --version
 RUN echo "deb http://ftp.debian.org/debian buster-backports main " >> /etc/apt/sources.list.d/backports.list \
